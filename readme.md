@@ -9,6 +9,7 @@
 자바스트립트는 html 바디 태그 아래에   
 <script src=""></script>이런 식으로 작성한다.
 </pre>
+
 ### 2.1 Basic Data Types
 
 <pre>
