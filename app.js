@@ -1,2 +1,5 @@
-let a = 5;
-console.log(a + 2);
+const amIUgly = null;
+let something;
+
+console.log(amIUgly);
+console.log(something);
