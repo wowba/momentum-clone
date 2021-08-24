@@ -12,4 +12,6 @@
 ### 2.1 Basic Data Types
 
 <pre>
+데이터 타입에는 integar(1, 2 등), float(1.1 , 2.5 등), text("hello"),   
+string("my name is wowba")등이 있다. 숫자와 문자.
 </pre>
