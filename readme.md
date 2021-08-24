@@ -53,3 +53,13 @@ const abcde = [1, 2, 3, "a", "b", "c"] [] 안에 데이터들을 나열하면 �
 array 안에 ㅁ번째 값을 가져오려면 abcde[ㅁ-1] 을 입력하면 된다. (컴퓨터는 0부터 샘!)
 항목 하나를 array에 추가하려면 abcde.push()를 활용하여 넣는다.
 </pre>
+
+### 2.6 Objects
+
+<pre>
+array와 달리 object는 property를 가진 데이터를 정리해준다
+const me = { name: "lee", height = "180" };
+특정 데이터를 가리키려면 me.height 등으로 표시
+내부 데이터를 업데이트 하려면 me.height = "280"; 을 하면 된다. 다른 property 추가도 동일하게 가능.
+const 자체를 바꾸는건 안되지만, 내부 값을 바꾸는건 가능.
+</pre>
