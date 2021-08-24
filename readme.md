@@ -44,3 +44,12 @@ const amISmart = true; const amIUgly = false;
 undefined는 값이 아예 없는것. null은 null 이라는 값이 있지만, undefined는 값이 아예 없는것이다.
 어떤 variable이 존재 하지만, 값은 정해지지 않았을 때 나오는 것.
 </pre>
+
+### 2.5 Arrays
+
+<pre>
+array는 가장 기초적인 데이터 구조.
+const abcde = [1, 2, 3, "a", "b", "c"] [] 안에 데이터들을 나열하면 된다.
+array 안에 ㅁ번째 값을 가져오려면 abcde[ㅁ-1] 을 입력하면 된다. (컴퓨터는 0부터 샘!)
+항목 하나를 array에 추가하려면 abcde.push()를 활용하여 넣는다.
+</pre>

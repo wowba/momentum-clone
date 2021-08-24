@@ -1,5 +1,10 @@
-const amIUgly = null;
-let something;
+const week = ["mon", "tue", "wed", "thu", "fri", "sat"];
 
-console.log(amIUgly);
-console.log(something);
+// get item from array
+console.log(week[4]);
+
+// add one more day yo array
+
+week.push("sun");
+
+console.log(week);
