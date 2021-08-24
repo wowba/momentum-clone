@@ -15,3 +15,12 @@
 데이터 타입에는 integar(1, 2 등), float(1.1 , 2.5 등), text("hello"),   
 string("my name is wowba")등이 있다. 숫자와 문자.
 </pre>
+
+### 2.2 Variables
+
+<pre>
+ Variables는 자바스크립트를 비롯한 모든 프로그래밍 언어에서 값을 저장하거나 유지하는 역할을 한다.   
+ 자바스크립트에서 이를 만들기 위해선 const(constant, 상수, 바뀌지 않는 값)를 사용한다.
+ const a = 5; 상수의 이름은 공백이 있을 수 없다. 공백일경우 문자를 대문자로 바꾼다   
+ const veryLongVariableName = "wowba";
+</pre>
