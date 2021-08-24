@@ -24,3 +24,13 @@ string("my name is wowba")등이 있다. 숫자와 문자.
  const a = 5; 상수의 이름은 공백이 있을 수 없다. 공백일경우 문자를 대문자로 바꾼다   
  const veryLongVariableName = "wowba";
 </pre>
+
+### 2.3 const and let
+
+ <pre>
+ 자바스크립트로 variable은 const 말고 let 으로도 만들 수 있다. let a = 5;
+ 둘의 차이점은 const는 값이 변경 될 수 없다. 하지만 let은 새로운걸 생성할 수 있다.
+ let abc = "wowba"; abc = "king"; 이렇게 하면 값이 바뀐다.   
+ 대부분 const를 기본으로 사용하고 업데이트 해야할 경우에만 let을 쓴다.
+ *p.s* 이전에 사용한 var은 의도가 보이지 않고 상관없이 값을 바꿀수 있었다.
+ </pre>
