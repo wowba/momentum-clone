@@ -1,7 +1,5 @@
-const me = {
-  name: "lee",
-  height: 180,
-};
-console.log(me["height"]);
+function hi() {
+  console.log("today is good day, A");
+}
 
-me.height = 200;
+hi("wowba");

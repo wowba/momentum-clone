@@ -59,7 +59,22 @@ array 안에 ㅁ번째 값을 가져오려면 abcde[ㅁ-1] 을 입력하면 된�
 <pre>
 array와 달리 object는 property를 가진 데이터를 정리해준다
 const me = { name: "lee", height = "180" };
-특정 데이터를 가리키려면 me.height 등으로 표시
+특정 데이터를 가리키려면 me.height 등으로 표시 / 다른 방법으로 me["height"]
 내부 데이터를 업데이트 하려면 me.height = "280"; 을 하면 된다. 다른 property 추가도 동일하게 가능.
 const 자체를 바꾸는건 안되지만, 내부 값을 바꾸는건 가능.
+</pre>
+
+### 2.7 Function Part One
+
+<pre>
+자바스크립트에서 Function은 계속해서 반복 사용할 수 있는 코드조각.   
+function functionName(){code~} 이렇게 작성한다.
+코드 실행은 functionName(); 로 실행한다.
+function을 실행하는 동안 내부에 정보를 보내는 방법은 argumenmt이다.(괄호 안에 데이터를 넣는것!)
+</pre>
+
+### 2.8 Function part two
+
+<pre>
+
 </pre>
