@@ -1,5 +1,7 @@
-function hi() {
-  console.log("today is good day, A");
-}
+const player = {
+  sayHello: function (otherPersonName) {
+    console.log("hello! " + otherPersonName + "! have a good day!");
+  },
+};
 
-hi("wowba");
+player.sayHello("lee");

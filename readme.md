@@ -76,5 +76,11 @@ function을 실행하는 동안 내부에 정보를 보내는 방법은 argumenm
 ### 2.8 Function part two
 
 <pre>
+함수에 데이터를 넣으러면   
+function functionName(personName){console.log(personName);} 
+functionName(lee); 이렇게 작성하면 lee 라는 데이터가 함수 안에 들어가게 되는 것이다.
+데이터가 들어가면 PersonName이라는 variable 이름을 가지게 되는것.   
+function functionName(personName, age) 처럼 argument는 여러개가 들어갈 수 있다.
 
-</pre>
+object 안에 function을 만드려면    
+const objectName = { functionName = function(){code~} } 이렇게 작성해야 한다.</pre>
