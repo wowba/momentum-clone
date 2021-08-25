@@ -83,4 +83,31 @@ functionName(lee); 이렇게 작성하면 lee 라는 데이터가 함수 안에 
 function functionName(personName, age) 처럼 argument는 여러개가 들어갈 수 있다.
 
 object 안에 function을 만드려면    
-const objectName = { functionName = function(){code~} } 이렇게 작성해야 한다.</pre>
+const objectName = { functionName: function(){code~} } 이렇게 작성해야 한다.</pre>
+
+### 2.11 Returns
+
+<pre>
+함수는 주어진 데이타를 코드에 입력해 수행하고 그 결과값을 알려주는 것
+return을 함수 내부에서 이용하지 않고 console.log 만 사용하게 되면 콘솔창에서만 함수의 결과값 확인 가능.
+결국 return값을 통해 함수의 결과값을 외부로 내보낼 수 있게 되는것!
+또한 return 아래에 적힌 코드들은 작동하지 않는다. return값을 가지게 되면 함수는 거기서 종료됨.
+</pre>
+
+### 2.13 Conditionals
+
+<pre>
+조건문은 true 혹은 fasle 인지 알려주는 역할을 한다!   
+parseInt()는 string 을 number로 바꿔준다. 물론 string 안에 있는게 숫자로만 이루어져야 한다.
+이를 통해 콘솔창에서 숫자인지 아닌지(NaN) 확인할 수 있다
+</pre>
+
+### 2.14 Conditionals part Two
+
+<pre>
+if(){} / 소괄호() 안에는 boolean 값이 들어가고, 중괄호{} 안에는 해당 값일때 작동할 코드를 적어놓는다.
+여러번 적용할 경우 else if(){} 를 사용한다.   
+else if(a < b){} / else if(a < b && a < c){}   
+소괄호에서 조건 사이에 && 가 들어가면 and, ||가 들어가면 or 이다.
+a === b a와 b가 같을경우 / a !== b a와 b가 같지 않을경우
+</pre>
