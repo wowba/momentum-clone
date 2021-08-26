@@ -120,5 +120,27 @@ a === b a와 b가 같을경우 / a !== b a와 b가 같지 않을경우
 ### 3.0 The Document Object
 
 <pre>
+자바스크립트는 Html을 자동적으로 읽어온다. 또한 변경도 가능하다.
+ex) 콘솔창에서 document.title , document.location 등을 통해 정보를 가져올 수 있음.
+</pre>
+
+### 3.1 HTML in JavaScript
+
+<pre>
+자바스크립트로 정보를 가져오려면 document 객체와 element를 가져오는 함수를 이용할 수 있다.
+getElementById 라는 함수를 이용해 특정 id를 가진 태그를 불러온다.
+자바스크립트를 통해 Html과의 다양한 상호작용이 가능해진다!!
+</pre>
+
+### 3.2 Searching For Elements
+
+<pre>
+querySelector는 element를 css 선택자 방식으로 검색할 수 있다. 좀 더 정확하게 검색 가능!
+querySelectorAll 은 array 형태로 조건에 부합하는 모든 element를 가져온다.
+</pre>
+
+### 3.3 Events
+
+<pre>
 
 </pre>
