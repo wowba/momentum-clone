@@ -142,5 +142,26 @@ querySelectorAll 은 array 형태로 조건에 부합하는 모든 element를 �
 ### 3.3 Events
 
 <pre>
+브라우저에서 사용자의 행동은 자바스크립트에서 event로 받아들인다. 클릭, 마우스 이동 등등..
+addEventListener 를 통해 event를 listen 하고 원하는 function을 argument로 넣어 실행시킬 수 있다.
+</pre>
+
+### 3.5 More Events
+
+ <pre>
+event를 사용하는 방법에는 2가지가 있음. 하나는 addEventListnener을 사용한 것,   
+나머지는 onclick, onmouseenter 등을 이용한 것이 있다. 하지만 전자가 깔끔한듯.
+ </pre>
+
+### 3.7 CSS in JavaScript
+
+<pre>
+ 자바스크립트 에선 class에 오타가 생길경우 찾기가 힘드니 
+ 미리 const 를 사용하여 class값을 정의 한 다음 입력하면 오타가 나도 찾기 쉬워진다.
+</pre>
+
+### 3.8 Toggle
+
+<pre>
 
 </pre>
