@@ -1,5 +1,7 @@
 # 모멘텀 클론 공부 정리 노트 (JAVASCRIPT)
 
+## Welcome To JavaScript
+
 ### 2.0 Your First JS Project
 
 <pre>
@@ -102,7 +104,7 @@ parseInt()는 string 을 number로 바꿔준다. 물론 string 안에 있는게 
 이를 통해 콘솔창에서 숫자인지 아닌지(NaN) 확인할 수 있다
 </pre>
 
-### 2.14 Conditionals part Two
+### 2.14~15 Conditionals part Two, Three
 
 <pre>
 if(){} / 소괄호() 안에는 boolean 값이 들어가고, 중괄호{} 안에는 해당 값일때 작동할 코드를 적어놓는다.
@@ -111,4 +113,12 @@ else if(a < b){} / else if(a < b && a < c){}
 소괄호에서 조건 사이에 && 가 들어가면 and, ||가 들어가면 or 이다.
 a === b a와 b가 같을경우 / a !== b a와 b가 같지 않을경우
 <= / >= 등도 조건에서 활용한다.
+</pre>
+
+## JavaScript On The Browser
+
+### 3.0 The Document Object
+
+<pre>
+
 </pre>
