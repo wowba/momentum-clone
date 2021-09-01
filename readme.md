@@ -163,5 +163,86 @@ event를 사용하는 방법에는 2가지가 있음. 하나는 addEventListnene
 ### 3.8 Toggle
 
 <pre>
+toggle은 해당 class를 없으면 생성하고 있으면 없애주는 기능을 한다.
+</pre>
 
+### 4.0 Input Values
+
+<pre>
+console.dir(constName) 를 활용하여 콘솔창에서 어떤 property를 찾아야 하는지 알 수 있다.
+</pre>
+
+### 4.1 Form Submisson
+
+<pre>
+form 내부에서 input으로 제출하게 되면 html은 페이지를 새로고침 해버린다! 이걸 해결해야 함.
+</pre>
+
+### 4.2 Events
+
+<pre>
+form의 기본 동작은 submit, submit에 의해 웹페이지는 refresh 된다.
+하지만 js에서 이를 preventDefault()를 통해 방지할 수 있다.
+</pre>
+
+### 4.3 Events part Two
+
+<pre>
+EventListener의 함수는 항상 특정 정보를 argument로 받는데,
+이는 방금 그 함수가 실행되었을때 가지고 있는 데이터값을 가지고 있다.
+해당 함수에서 해당 object값을 확인할 수 있으며 (console.log)
+이는 보통 event 를 argument 위치에 넣어 표시한다.
+</pre>
+
+## CLOCK
+
+### 5.0 Intervals
+
+<pre>
+interval은 매번 일어나야 하는 무언가를 의미. ex) 매 2초, 매 1초
+setInterval() 함수를 통해 사용 가능하다. 2개의 argument, 함수와 시간초를 받는다.
+setInterval(functionName, time)
+</pre>
+
+### 5.1 Timeout and Dates
+
+<pre>
+setTimeout()은 함수, 시간을 입력하며 일정 시간 뒤 함수가 시작하게 만든다.
+자바스크립트에서 현재 시간,날짜,년도에 대한 정보를 가져오려면 new Date() 를 const로 불러낸다.
+const date = new Date(); 로 불러내어 date.getHours, date.getMinutes 둥의 기능을 통해 값을 가져올 수 있다.
+
+console에
+
+typeof Date;
+
+를 입력해보시면 function 이라고 알려줍니다.
+JavaScript에는 생성자 함수라는 것이 있는데요.
+new 를 선두에 쓰고 생성자 함수를 호출하면 instance object를 반환합니다.
+이는 생성자 함수로 객체를 생성할 때 하기로 한 약속(문법)입니다.
+생성자 함수는 arguments를 받을 수 있습니다.
+console 에
+
+const date = new Date();
+
+를 입력하여 date 변수를 선언하시고,
+
+typeof date;
+
+를 입력해보시면 object를 반환하는 것을 볼 수 있습니다.
+이렇게 생성한 date 객체를 우리는 이전시간에 배웠던대로
+object.property 와 같은 형식으로 사용할 수 있습니다.
+(강의 내용 중 #2.6 참고)
+
+이는 Python의 Class와 유사하며,
+더 궁금한 것이 있으시다면 구글에
+생성자 함수 (with JavaScript)에 대해 검색해보시기 바랍니다.
+</pre>
+
+### 5.2 PadStart
+
+<pre>
+PadStart() 함수는 문자열의 길이(character)를 재서 특정 길이 이하일경우
+나머지 길이를 특정 문자로 채우는 기능이다.
+"king".padStart(10,"x") 라고 하면 king은 4글자이므로 앞 6자를 x 로 채우게된다.
+padEnd()는 방향만 반대이다.
 </pre>
