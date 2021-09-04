@@ -210,6 +210,7 @@ setInterval(functionName, time)
 setTimeout()은 함수, 시간을 입력하며 일정 시간 뒤 함수가 시작하게 만든다.
 자바스크립트에서 현재 시간,날짜,년도에 대한 정보를 가져오려면 new Date() 를 const로 불러낸다.
 const date = new Date(); 로 불러내어 date.getHours, date.getMinutes 둥의 기능을 통해 값을 가져올 수 있다.
+또한 Date는 1970년 1월 1일 이후 지금까지 흐른 시간을 미리세컨으로 값을 가진다!!! 매우 중요!!!
 
 console에
 
@@ -245,4 +246,82 @@ PadStart() 함수는 문자열의 길이(character)를 재서 특정 길이 이�
 나머지 길이를 특정 문자로 채우는 기능이다.
 "king".padStart(10,"x") 라고 하면 king은 4글자이므로 앞 6자를 x 로 채우게된다.
 padEnd()는 방향만 반대이다.
+</pre>
+
+## 6 QUOTES AND BACKGROUND
+
+### 6.0 Quotes
+
+<pre>
+Math.random() 는 0부터 1사이의 무작의 숫자를 준다.
+Math.round() 는 해당 숫자를 반올림한다
+Math.ceil() 는 해당 숫자를 올림한다
+Math.floor() 는 해당 숫자를 내림한다
+</pre>
+
+### 6.1 Background
+
+<pre>
+document.createElement() 를 통해 자바스크립트에서 element를 만들 수 있다.
+document.body.appendChild() 를 이용하면 html의 body태그 맨 아래쪽에 만든것을 보낼 수 있다.
+</pre>
+
+## 7 TO DO LIST
+
+### 7.1 Adding To Do
+
+<pre>
+const li = document.createElement("li");
+const span = document.createElement("span");
+li.appendChild(span);
+이 방법을 통해 자바스크립트로 태그 안에 태그를 넣을 수 있다.</pre>
+
+### 7.2 Deleting To Do
+
+<pre>
+function deleteToDo(event) {
+  const li = event.target.parentElement;
+  li.remove();
+}
+함수에 들어온 event속 정보인 target.parentElement를 이용해 target이 속한 부모를 알아낼 수 있다.
+이를 이용해 event.target.element를 지정, .remove()를 이용해 삭제할 수 있다.
+</pre>
+
+### 7.3 Saving To Do
+
+<pre>
+localStorage.setItem("todos", toDos); 를 이용하여 정보를 저장할 수 있다.
+하지만 localStorage는 array는 못들어가고 단순 텍스트만 들어갈 수 있으며, 이를 저장하기 위해선
+JSON.stringify() 를 사용하여 string으로 바꿔주어야 한다.
+localStorage.setItem("todos", JSON.stringify(toDos));
+</pre>
+
+### 7.4 Loading To Do
+
+<pre>
+JSON.stringify()를 사용하여 stirng으로 만들 수 있다면
+JSON.parse()를 사용하여 다시 살아있는 array로 만들 수 있다.
+JSON.stringify([1,2,3,4]) >> "[1,2,3.4]"
+JSON.parse("[1,2,3,4]") >> [1,2,3,4]
+
+array는 각각의 item에 대해 함수를 실행시킬 수 있는데,이는 forEach()라는 함수로 가능하다.
+function f(item) {
+  console.log("shit", item);
+}
+arrayName.forEach(f); 
+은 각각의 item에 f 이라는 함수를 실행시킨다.
+
+또한 화살표 함수로 표현할 수 있는데
+arrayName.forEach((item) => console.log("shit", item)); 이렇게도 사용 가능하다. 
+이때는 함수 명이 필요없다. 왜냐하면 바로 동작해야할 내용을 실행하기 때문이다.
+</pre>
+
+### 7.6 Deleting To Do
+
+<pre>
+.filter() 함수는 argument 로 함수를 받으며, 모든 item에 대해 argument를 실행한다. (forEach와 유사)
+그 함수는 true일경우 값을 유지, false 일경우 그 값을 배제한다.
+const array = [1,2,3,4,5];
+function filter(number){ return number !== 3};
+array.filter(function) >> array = [1,2,4,5] 이다.
 </pre>
