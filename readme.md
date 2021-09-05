@@ -323,5 +323,25 @@ arrayName.forEach((item) => console.log("shit", item)); 이렇게도 사용 가�
 그 함수는 true일경우 값을 유지, false 일경우 그 값을 배제한다.
 const array = [1,2,3,4,5];
 function filter(number){ return number !== 3};
-array.filter(function) >> array = [1,2,4,5] 이다.
+array.filter(function); >> array = [1,2,4,5] 이다.
+</pre>
+
+## 8 WEATHER
+
+### 8.0 Geolocation
+
+<pre>
+navigator.geolocation.getCurrentPosition()
+이 코드 한줄이면 현재 사용자의 위치를 알아낼 수 있다. 얼마나 대단한가!
+</pre>
+
+### 8.1 Weather API
+
+<pre>
+프로그램들이 서로 소통하는 방법이 API. 
+  const lat = position.coords.latitude;
+  const lng = position.coords.longitude;
+  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lng}&appid=${API_KEY}`;
+  fetch(url);
+fetch() 를 통해 url을 웹에서 불러올 수 있다.
 </pre>
