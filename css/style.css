@@ -1,5 +1,17 @@
+@import "reset.css";
+@import "greetings.css";
+@import "clock.css";
+@import "quotes.css";
+@import "backgrounds.css";
+@import "todo.css";
+@import "weather.css";
+@import "date.css";
+
 body {
+  width: 100vh;
+  height: 100vh;
 }
+
 .hidden {
   display: none;
 }

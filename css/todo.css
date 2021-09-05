@@ -1,0 +1,61 @@
+.todo-form {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px 54px;
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.todo-form:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.todo-form input {
+  background: transparent;
+  width: 400px;
+  padding-bottom: 10px;
+  border: none;
+  border-bottom: solid 2px white;
+  color: white;
+  font-size: 20px;
+  text-align: center;
+}
+.todo-form input::placeholder {
+  color: white;
+}
+
+.todo-list {
+  position: absolute;
+  top: 64.5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  width: 50vh;
+  height: 30vh;
+  padding: 20px;
+  transition: 0.5s;
+}
+.todo-list:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.todo-list li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.todo-list button {
+  margin-left: 10px;
+  background: transparent;
+  border: solid 1px white;
+  padding: 3px;
+  border-radius: 10px;
+}
+.todo-list--span {
+  font-size: 30px;
+  display: block;
+  margin-bottom: 40px;
+}

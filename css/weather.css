@@ -1,0 +1,35 @@
+.weather {
+  position: absolute;
+  top: 64.5%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  color: white;
+
+  background: rgba(0, 0, 0, 0.4);
+  border-radius: 20px;
+  width: 50vh;
+  height: 30vh;
+  padding: 20px;
+  transition: 0.5s;
+  display: flex;
+  flex-direction: column;
+}
+.weather:hover {
+  background: rgba(0, 0, 0, 0.8);
+}
+.weather span:nth-child(1) {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+.weather span:nth-child(2) {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.weather span:nth-child(3) {
+  margin-top: 20px;
+  font-size: 25px;
+}
+.weather span:nth-child(4) {
+  margin-top: 20px;
+  font-size: 25px;
+}

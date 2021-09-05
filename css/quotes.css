@@ -1,0 +1,30 @@
+.quote {
+  position: absolute;
+  top: 90.8%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  border-radius: 30px;
+  transition: 0.5s;
+}
+.quote:hover {
+  background: rgba(0, 0, 0, 0.9);
+}
+.quote span:first-child {
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: 30px;
+}
+.quote span:last-child {
+  font-size: 23px;
+  color: white;
+  margin-top: 10px;
+}

@@ -5,32 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/reset.css" />
-    <title>Momentum-App</title>
+    <title>Momentum-App Clone</title>
   </head>
   <body>
-    <form class="login-form hidden">
-      <input
-        required
-        maxlength="15"
-        type="text"
-        placeholder="what is your name"
-      />
-      <button>login</button>
-    </form>
     <h1 class="hidden greeting"></h1>
-    <h2 class="clock">00:00</h2>
-    <form class="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
+    <h2 class="clock hidden"></h2>
+    <form class="login-form hidden">
+      <div class="login-form--flex">
+        <input
+          class="login-form--flex--input"
+          required
+          maxlength="15"
+          type="text"
+          placeholder="Hello, Stranger. What is your name?"
+        />
+        <button class="login-form--flex--button">Login</button>
+      </div>
+      <div class="login-form--flex login-form--flex--alert">
+        -This page is suitable for PC-
+      </div>
     </form>
-    <ul class="todo-list"></ul>
-    <div class="quote">
+    <form class="todo-form hidden">
+      <input
+        type="text"
+        placeholder="Write a To Do and Press Enter "
+        required
+      />
+    </form>
+    <ul class="todo-list hidden">
+      <span class="todo-list--span">Today's Work</span>
+    </ul>
+    <div class="quote hidden">
       <span></span>
       <span></span>
     </div>
-    <div class="weather">
+    <div class="weather hidden">
+      <span>Today's Weather</span>
       <span></span>
       <span></span>
+      <div></div>
+    </div>
+    <div class="date hidden">
+      <span class="years"></span>
+      <span class="weekdays"></span>
     </div>
   </body>
   <script src="js/greetings.js"></script>
@@ -39,4 +56,5 @@
   <script src="js/background.js"></script>
   <script src="js/todo.js"></script>
   <script src="js/weather.js"></script>
+  <script src="js/date.js"></script>
 </html>
